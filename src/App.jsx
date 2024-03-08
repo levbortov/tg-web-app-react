@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import Button from './components/Button/Button';
 import { useTelegram } from './hooks/useTelegram';
+import Button from './components/Button/Button';
+import Header from './components/Header/Header';
 
 function App() {
   const {tg, onToggleButton} = useTelegram();
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+      <Header/>
       <Button onClick={onToggleButton}>toggl</Button>
     </>
   )
