@@ -1,5 +1,5 @@
 .button {
-    height: 40px;
+    height: 28px;
 
     font-size: 16px;
     font-weight: 500;
@@ -8,12 +8,12 @@
     align-items: center;
     justify-content: center;
 
-    padding: 24px;
+    padding: 12px;
 
     background: var(--tg-theme-button-color, #2196F3);
     color: var(--tg-theme-button-text-color, #fff);
 
-    border-radius: 24px;
+    border-radius: 6px;
     border: none;
     outline: none;
     cursor: pointer;
