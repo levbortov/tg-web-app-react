@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 
-const tg = window.Telegram.WebApp;
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const tg = window.Telegram.WebApp;
 
   useEffect((() => {
     tg.ready();
