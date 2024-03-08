@@ -1,20 +1,21 @@
 .button {
     height: 28px;
-
-    font-size: 16px;
-    font-weight: 500;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 12px;
+    border-radius: 6px;
 
-    background: var(--tg-theme-button-color, #2196F3);
+    /* Шрифт */
+    font-size: 16px;
+    font-weight: 500;
     color: var(--tg-theme-button-text-color, #fff);
 
-    border-radius: 6px;
+    /* Оформление и цвет */
+    background: var(--tg-theme-button-color, #2196F3);
     border: none;
     outline: none;
+
+    /* Курсор */
     cursor: pointer;
 }
