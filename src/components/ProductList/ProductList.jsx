@@ -42,7 +42,7 @@ const products = [
     },
 ]
 
-const ProductList = () => {
+const ProductList = () => {/*
     const [addetItems, setAddedItems] = React.useState([]);
     const { tg } = useTelegram();
 
@@ -55,11 +55,17 @@ const ProductList = () => {
         tg.MaiButton.setParams({
             text: 'Корзина (' + addetItems.length + ')'
         })
-    }, [addetItems]);
+    }, [addetItems]); */
 
     return (
         <div className='list'>
             aboba
+            {/*
+            {products.map(item => <ProductItem
+                key={item.id}
+                onAdd={onAdd}
+                {...item} />)}
+            */}
         </div>
     );
 };
