@@ -61,10 +61,6 @@ const ProductList = () => {
         });
     }
 
-    useEffect(() => {
-
-    }, []);
-
     return (
         <div className='list'>
             aboba
