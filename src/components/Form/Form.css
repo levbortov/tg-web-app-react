@@ -23,11 +23,5 @@
     height: 28px;
     padding: 12px;
     border-radius: 6px;
-    background: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
     border: 1px solid var(--tg-theme-button-color);
-}
-
-.select::placeholder {
-    color: var(--tg-theme-text-color);
 }
