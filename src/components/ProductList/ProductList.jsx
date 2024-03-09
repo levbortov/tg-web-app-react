@@ -63,7 +63,6 @@ const ProductList = () => {
 
     return (
         <div className='list'>
-            aboba
             {
                 products.map(item => <ProductItem
                     key={item.id}
