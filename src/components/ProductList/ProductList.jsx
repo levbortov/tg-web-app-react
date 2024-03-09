@@ -43,29 +43,27 @@ const products = [
 ]
 
 const ProductList = () => {
-    const [addetItems, setAddedItems] = React.useState([]);/*
+    const [addetItems, setAddedItems] = React.useState([]);
     const { tg } = useTelegram();
 
     const onAdd = (product) => {
         setAddedItems(prev => [...prev, product]);
     }
-
-    useEffect(() => {
-        tg.MaiButton.show();
-        tg.MaiButton.setParams({
-            text: 'Корзина (' + addetItems.length + ')'
-        })
-    }, [addetItems]); */
+    /*
+        useEffect(() => {
+            tg.MaiButton.show();
+            tg.MaiButton.setParams({
+                text: 'Корзина (' + addetItems.length + ')'
+            })
+        }, [addetItems]); */
 
     return (
         <div className='list'>
             aboba
-            {/*
             {products.map(item => <ProductItem
                 key={item.id}
                 onAdd={onAdd}
                 {...item} />)}
-            */}
         </div>
     );
 };
