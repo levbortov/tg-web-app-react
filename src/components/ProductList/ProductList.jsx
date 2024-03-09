@@ -47,23 +47,31 @@ const ProductList = () => {
     const { tg } = useTelegram();
 
     const onAdd = (product) => {
-        setAddedItems(prev => [...prev, product]);
+        const alreadyAdded = addetItems.find(item => item.id === product.id);
+        let newItems = [];
+        if (alreadyAdded) {
+            newItems = addetItems.filter(item => item.id !== product.id);
+        } else {
+            newItems = [...addetItems, product];
+        }
+        setAddedItems(newItems);
+        tg.MainButton.show();
+        tg.MainButton.setParams({
+            text: `${newItems.length} ${newItems.length > 1 ? 'товара' : 'товар'}`,
+        });
     }
-    /*
-        useEffect(() => {
-            tg.MaiButton.show();
-            tg.MaiButton.setParams({
-                text: 'Корзина (' + addetItems.length + ')'
-            })
-        }, [addetItems]); */
+
+    useEffect(() => {
+
+    }, []);
 
     return (
         <div className='list'>
             aboba
             {products.map(item => <ProductItem
                 key={item.id}
-                onAdd={onAdd}
-                {...item} />)}
+                product={item}
+                onAdd={onAdd} />)}
         </div>
     );
 };
