@@ -18,6 +18,11 @@
 }
 
 .select {
+    /* Сбросить все стили по умолчанию */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     width: 100%;
     height: 28px;
     padding: 12px;
