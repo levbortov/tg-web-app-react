@@ -64,12 +64,12 @@ const ProductList = () => {
     return (
         <div className='list'>
             aboba
-            {/*
+            {
                 products.map(item => <ProductItem
-                key={item.id}
-                product={item}
+                    key={item.id}
+                    product={item}
                     onAdd={onAdd} />)
-                */}
+            }
         </div>
     );
 };
