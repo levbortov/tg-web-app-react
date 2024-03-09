@@ -59,7 +59,7 @@ const ProductList = () => {
 
     return (
         <div className='list'>
-
+            aboba
         </div>
     );
 };
