@@ -42,8 +42,8 @@ const products = [
     },
 ]
 
-const ProductList = () => {/*
-    const [addetItems, setAddedItems] = React.useState([]);
+const ProductList = () => {
+    const [addetItems, setAddedItems] = React.useState([]);/*
     const { tg } = useTelegram();
 
     const onAdd = (product) => {
