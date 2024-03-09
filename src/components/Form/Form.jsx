@@ -1,13 +1,28 @@
 import React, { useEffect } from 'react';
 import { useTelegram } from '../../hooks/useTelegram';
 import './Form.css';
-import Button from '../Button/Button';
 
 const Form = () => {
     const [country, setCountry] = React.useState('');
     const [city, setCity] = React.useState('');
     const [subject, setSubject] = React.useState('phisical');
     const { tg } = useTelegram();
+
+    const onSandData = () => {
+        const data = {
+            country,
+            city,
+            subject
+        }
+        tg.sendData(JSON.stringify(data));
+    }
+
+    useEffect(() => {
+        tg.WebApp.onEvent('mainButtonClicked', onSandData);
+        return () => {
+            tg.WebApp.offEvent('mainButtonClicked', onSandData);
+        }
+    }, [])
 
     useEffect(() => {
         tg.MainButton.setParams({
