@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
 import { useTelegram } from '../../hooks/useTelegram';
-import { Input, Select, Option } from '@mui/base';
 
 const Form = () => {
     const [country, setCountry] = React.useState('');
@@ -54,12 +53,12 @@ const Form = () => {
     return (
         <div className='form'>
             <h3>Введите ваши данные</h3>
-            <Input
+            <input
                 placeholder='Страна'
                 value={country}
                 onChange={changeCountry}
             />
-            <Input
+            <input
                 placeholder='Город'
                 value={city}
                 onChange={changeCity}

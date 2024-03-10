@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@mui/base';
+import Button from '../../ui/Button';
 
 const ProductItem = ({ product, onAdd }) => {
     const onAddHandler = () => {

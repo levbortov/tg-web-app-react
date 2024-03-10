@@ -3,35 +3,35 @@ ThemeParams Mini Apps can adjust the appearance of the interface to match the Te
 */
 
 .tg-theme-bg-color {
-    background-color: var(--tg-theme-bg-color);
+    background-color: var(--tg-theme-bg-color, #fff);
 }
 
 .tg-theme-text-color {
-    color: var(--tg-theme-text-color);
+    color: var(--tg-theme-text-color, #000);
 }
 
 .tg-theme-hint-color {
-    color: var(--tg-theme-hint-color);
+    color: var(--tg-theme-hint-color, #8c8c8c);
 }
 
 .tg-theme-link-color {
-    color: var(--tg-theme-link-color);
+    color: var(--tg-theme-link-color, #2196f3);
 }
 
 .tg-theme-button-color {
-    background-color: var(--tg-theme-button-color);
+    background-color: var(--tg-theme-button-color, #2196f3);
 }
 
 .tg-theme-button-text-color {
-    color: var(--tg-theme-button-text-color);
+    color: var(--tg-theme-button-text-color, #fff);
 }
 
 .tg-theme-secondary-bg-color {
-    background-color: var(--tg-theme-secondary-bg-color);
+    background-color: var(--tg-theme-secondary-bg-color, #eaeaf3);
 }
 
 .tg-theme-header-bg-color {
-    background-color: var(--tg-theme-header-bg-color);
+    background-color: var(--tg-theme-header-bg-color, #f6f6f6);
 }
 
 .tg-theme-accent-text-color {
@@ -51,5 +51,5 @@ ThemeParams Mini Apps can adjust the appearance of the interface to match the Te
 }
 
 .tg-theme-destructive-text-color {
-    color: var(--tg-theme-destructive-text-color);
+    color: var(--tg-theme-destructive-text-color, #f44336);
 }
