@@ -8,7 +8,7 @@ const ProductItem = ({ product, onAdd }) => {
 
     return (
         <div className='flex flex-col gap-1 p-1 tg-theme-bg-color rounded-md'>
-            <div className='img' />
+            <img src={product.url} alt={product.title} className='flex-1 w-full rounded-sm tg-theme-secondary-bg-color' />
             <div className='flex justify-between align-middle'>
                 <span className='text-left text-nowrap truncate font-semibold '>{product.title}</span>
                 <span className='text-right font-mono text-sm'>{product.price}</span>
