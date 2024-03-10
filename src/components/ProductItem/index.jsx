@@ -7,11 +7,13 @@ const ProductItem = ({ product, onAdd }) => {
     }
 
     return (
-        <div className={'item'}>
+        <div className='flex flex-col gap-1 p-1 tg-theme-bg-color rounded-md'>
             <div className='img' />
-            <div className='title'>{product.title}</div>
-            <div className='description'>{product.description}</div>
-            <div className='price'>{product.price}</div>
+            <div className='flex justify-between align-middle'>
+                <span className='text-left text-nowrap truncate font-semibold '>{product.title}</span>
+                <span className='text-right font-mono text-sm'>{product.price}</span>
+            </div>
+            <span className='tg-theme-hint-color max-h-12 text-ellipsis'>{product.description}</span>
             <Button onClick={onAddHandler}>Купить</Button>
         </div>
     );

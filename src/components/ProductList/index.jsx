@@ -5,39 +5,63 @@ import { useTelegram } from '../../hooks/useTelegram';
 const products = [
     {
         id: 1,
-        title: 'Смартфон 1',
-        description: 'Описание 1',
-        price: 1000,
+        title: 'Телевизор',
+        description: 'Очень большой телевизор; Красивый и хороший',
+        price: 10000
     },
     {
         id: 2,
-        title: 'Смартфон 2',
-        description: 'Описание 2',
-        price: 2000,
+        title: 'Телефон',
+        description: 'Очень шустрый телефон; Красивый и хороший',
+        price: 20000
     },
     {
         id: 3,
-        title: 'Смартфон 3',
-        description: 'Описание 3',
-        price: 3000,
+        title: 'Ноутбук',
+        description: 'Очень долгоживущий ноутбук; Красивый и хороший',
+        price: 30000
     },
     {
         id: 4,
-        title: 'Смартфон 4',
-        description: 'Описание 4',
-        price: 4000,
+        title: 'Компьютер',
+        description: 'Очень долгоживущий компьютер; Красивый и хороший',
+        price: 40000
     },
     {
         id: 5,
-        title: 'Смартфон 5',
-        description: 'Описание 5',
-        price: 5000,
+        title: 'Монитор',
+        description: 'Очень большой монитор; Красивый и хороший',
+        price: 50000
     },
     {
         id: 6,
-        title: 'Смартфон 6',
-        description: 'Описание 6',
-        price: 6000,
+        title: 'Микрофон',
+        description: 'Очень большой микрофон; Красивый и хороший',
+        price: 60000
+    },
+    {
+        id: 7,
+        title: 'Кофеварка',
+        description: 'Очень большой кофеварка; Красивый и хороший',
+        price: 70000
+    },
+    {
+        id: 8,
+        title: 'Холодильник',
+        description: 'Очень большой холодильник; Красивый и хороший',
+        price: 80000
+    },
+    {
+        id: 9,
+        title: 'Шкаф',
+        description: 'Очень большой шкаф; Красивый и хороший',
+        price: 90000
+    },
+    {
+        id: 10,
+        title: 'Смартфон',
+        description: 'Очень большой смартфон; Красивый и хороший',
+        price: 100000
     },
 ]
 
@@ -71,7 +95,7 @@ const ProductList = () => {
     }
 
     return (
-        <div className='list'>
+        <div className='grid grid-cols-2 gap-2'>
             {
                 products.map(item => <ProductItem
                     key={item.id}

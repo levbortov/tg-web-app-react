@@ -13,7 +13,7 @@ function App() {
   }), [])
 
   return (
-    <div className='App'>
+    <div className='App flex flex-col gap-2'>
       <Header />
       <Routes>
         <Route index element={<ProductList />} />
