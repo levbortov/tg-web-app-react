@@ -7,7 +7,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <App className='bg-secondary_bg_color' />
     </BrowserRouter>
   </React.StrictMode>,
 )
