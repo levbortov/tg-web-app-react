@@ -4,7 +4,7 @@ import Button from '../../ui/Button';
 
 
 function Header() {
-    const { tg, user, onClose, onSetBackButton } = useTelegram();
+    const { user, onClose, onSetBackButton } = useTelegram();
 
     return (
         <div className='header tg-theme-header-bg-color'>

@@ -24,5 +24,6 @@ export function useTelegram() {
         onSetBackButton,
         tg,
         user: tg.initDataUnsafe?.user,
+        theme: tg.themeParams,
     }
 };
