@@ -1,5 +1,21 @@
 /*
 ThemeParams Mini Apps can adjust the appearance of the interface to match the Telegram user's app in real time. This object contains the user' s current theme settings: Field Type Description bg_color String Optional. Background color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-bg-color). text_color String Optional. Main text color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-text-color). hint_color String Optional. Hint text color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-hint-color). link_color String Optional. Link color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-link-color). button_color String Optional. Button color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-button-color). button_text_color String Optional. Button text color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-button-text-color). secondary_bg_color String Optional. Bot API 6.1+Secondary background color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-secondary-bg-color). header_bg_color NEW String Optional. Bot API 7.0+Header background color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-header-bg-color). accent_text_color NEW String Optional. Bot API 7.0+Accent text color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-accent-text-color). section_bg_color NEW String Optional. Bot API 7.0+Background color for the section in the #RRGGBB format. It is recommended to use this in conjunction with secondary_bg_color. Also available as the CSS variable var(--tg-theme-section-bg-color). section_header_text_color NEW String Optional. Bot API 7.0+Header text color for the section in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-section-header-text-color). subtitle_text_color NEW String Optional. Bot API 7.0+Subtitle text color in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-subtitle-text-color). destructive_text_color NEW String Optional. Bot API 7.0+Text color for destructive actions in the #RRGGBB format. Also available as the CSS variable var(--tg-theme-destructive-text-color).
+
+{
+        "secondary_bg_color": "#131415",
+        "button_text_color": "#ffffff",
+        "link_color": "#62bcf9",
+        "accent_text_color": "#2ea6ff",
+        "text_color": "#ffffff",
+        "section_bg_color": "#18222d",
+        "header_bg_color": "#131415",
+        "button_color": "#2ea6ff",
+        "subtitle_text_color": "#b1c3d5",
+        "destructive_text_color": "#ef5b5b",
+        "section_header_text_color": "#b1c3d5",
+        "hint_color": "#b1c3d5",
+        "bg_color": "#18222d"
+    }
 */
 
 .tg-theme-bg-color {
@@ -11,7 +27,7 @@ ThemeParams Mini Apps can adjust the appearance of the interface to match the Te
 }
 
 .tg-theme-hint-color {
-    color: var(--tg-theme-hint-color, #8c8c8c);
+    color: var(--tg-theme-hint-color, #b1c3d5);
 }
 
 .tg-theme-link-color {
@@ -31,25 +47,25 @@ ThemeParams Mini Apps can adjust the appearance of the interface to match the Te
 }
 
 .tg-theme-header-bg-color {
-    background-color: var(--tg-theme-header-bg-color, #f6f6f6);
+    background-color: var(--tg-theme-header-bg-color, #eaeaf3);
 }
 
 .tg-theme-accent-text-color {
-    color: var(--tg-theme-accent-text-color);
+    color: var(--tg-theme-accent-text-color, #2ea6ff);
 }
 
 .tg-theme-section-bg-color {
-    background-color: var(--tg-theme-section-bg-color);
+    background-color: var(--tg-theme-section-bg-color, #eaeaf3);
 }
 
 .tg-theme-section-header-text-color {
-    color: var(--tg-theme-section-header-text-color);
+    color: var(--tg-theme-section-header-text-color, #b1c3d5);
 }
 
 .tg-theme-subtitle-text-color {
-    color: var(--tg-theme-subtitle-text-color);
+    color: var(--tg-theme-subtitle-text-color, #b1c3d5);
 }
 
 .tg-theme-destructive-text-color {
-    color: var(--tg-theme-destructive-text-color, #f44336);
+    color: var(--tg-theme-destructive-text-color, #ef5b5b);
 }

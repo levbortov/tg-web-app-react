@@ -6,7 +6,7 @@ import ProductList from './components/ProductList';
 import Form from './components/Form';
 
 function App() {
-  const { tg, theme } = useTelegram();
+  const { tg } = useTelegram();
 
   useEffect((() => {
     tg.ready();
@@ -15,11 +15,6 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <code>
-        <pre>
-          {JSON.stringify(theme, null, 2)}
-        </pre>
-      </code>
       <Routes>
         <Route index element={<ProductList />} />
         <Route path='form' element={<Form />} />
