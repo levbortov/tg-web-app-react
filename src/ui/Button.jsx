@@ -5,6 +5,7 @@ const Button = (props) => {
         <button className='
             tg-theme-button-color
             tg-theme-button-text-color
+            active:brightness-[0.75]
             h-7
             px-3
             py-1

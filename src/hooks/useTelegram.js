@@ -5,6 +5,11 @@ export function useTelegram() {
         tg.close();
     }
 
+    const onSetBackButton = () => {
+        tg.BackButton.show();
+        tg.BackButton.onClick(() => window.history.back());
+    }
+
     const onToggleButton = () => {
         if (tg.MainButton.isVisible) {
             tg.MainButton.hide()
@@ -16,6 +21,7 @@ export function useTelegram() {
     return {
         onClose,
         onToggleButton,
+        onSetBackButton,
         tg,
         user: tg.initDataUnsafe?.user,
     }
