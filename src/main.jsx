@@ -7,7 +7,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App className='bg-button_color text-text_color' />
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
 )

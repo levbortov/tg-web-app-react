@@ -13,13 +13,13 @@ function App() {
   }), [])
 
   return (
-    <>
+    <div className='App tg-theme-secondary-bg-color'>
       <Header />
       <Routes>
         <Route index element={<ProductList />} />
         <Route path='form' element={<Form />} />
       </Routes>
-    </>
+    </div>
   )
 }
 
