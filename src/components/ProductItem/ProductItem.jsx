@@ -1,14 +1,13 @@
 import React from 'react';
-import './ProductItem.css';
 import Button from '../../ui/Button/Button';
 
-const ProductItem = ({ product, className, onAdd }) => {
+const ProductItem = ({ product, onAdd }) => {
     const onAddHandler = () => {
         onAdd(product);
     }
 
     return (
-        <div className={'item ' + className}>
+        <div className={'item'}>
             <div className='img' />
             <div className='title'>{product.title}</div>
             <div className='description'>{product.description}</div>
