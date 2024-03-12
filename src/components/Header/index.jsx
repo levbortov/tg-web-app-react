@@ -12,7 +12,7 @@ function Header() {
 
     return (
         <div className='header tg-theme-header-bg-color'>
-            <Button onClick={() => onPlatform}>Узнать платформу</Button>
+            <Button onClick={onPlatform}>Узнать платформу</Button>
             <span className='username'>{user?.username}</span>
             <span className='username'>({platform})</span>
         </div>
