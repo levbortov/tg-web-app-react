@@ -7,14 +7,14 @@ function Header() {
     const { user, tg, platform } = useTelegram();
 
     const onPlatform = () => {
-        tg.showAlert('Текущая платформа: ' + platform);
+        tg.showAlert(`Текущая платформа: ${platform}`);
     }
 
     return (
         <div className='header tg-theme-header-bg-color'>
             <Button onClick={() => onPlatform}>Узнать платформу</Button>
             <span className='username'>{user?.username}</span>
-            <span className='username'>{platform}</span>
+            <span className='username'>({platform})</span>
         </div>
     );
 }
