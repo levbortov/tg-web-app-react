@@ -10,7 +10,6 @@ function App() {
 
   useEffect((() => {
     onAuth();
-    tg.showAlert('Приложение запущено')
   }), [])
 
   return (
