@@ -4,11 +4,15 @@ import Button from '../../ui/Button';
 
 
 function Header() {
-    const { user, onClose } = useTelegram();
+    const { user, tg } = useTelegram();
+
+    const onPlatform = () => {
+        tg.showAlert('Текущая платформа: ' + tg.platform());
+    }
 
     return (
         <div className='header tg-theme-header-bg-color'>
-            <Button onClick={onClose}>Закрыть</Button>
+            <Button onClick={onPlatform}>Узнать платформу</Button>
             <span className='username'>{user?.username}</span>
         </div>
     );
