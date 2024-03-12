@@ -12,23 +12,23 @@ const Form = () => {
         const data = {
             country,
             city,
-            subject
-        }
+            subject,
+        };
         tg.sendData(JSON.stringify(data));
-    }, [country, city, subject])
+    }, [country, city, subject]);
 
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSandData);
         return () => {
             tg.offEvent('mainButtonClicked', onSandData);
-        }
-    }, [onSandData])
+        };
+    }, [onSandData]);
 
     useEffect(() => {
         tg.MainButton.setParams({
             text: 'Отправить данные',
         });
-    }, [])
+    }, []);
 
     useEffect(() => {
         if (country && city) {
@@ -36,42 +36,34 @@ const Form = () => {
         } else {
             tg.MainButton.hide();
         }
-    }, [country, city])
+    }, [country, city]);
 
     const changeCountry = (e) => {
         setCountry(e.target.value);
-    }
+    };
 
     const changeCity = (e) => {
         setCity(e.target.value);
-    }
+    };
 
     const changeSubject = (e) => {
         setSubject(e.target.value);
-        console.log(e.target.value)
-    }
+        console.log(e.target.value);
+    };
 
     return (
         <div
-            className='
+            className="
             flex
             flex-col
             gap-2
             tg-theme-bg-color
             p-4
-            rounded-2xl'
+            rounded-2xl"
         >
-            <h3 className='text-md font-light'>Введите ваши данные</h3>
-            <Input
-                placeholder='Страна'
-                value={country}
-                onChange={changeCountry}
-            />
-            <Input
-                placeholder='Город'
-                value={city}
-                onChange={changeCity}
-            />
+            <h3 className="text-md font-light">Введите ваши данные</h3>
+            <Input placeholder="Страна" value={country} onChange={changeCountry} />
+            <Input placeholder="Город" value={city} onChange={changeCity} />
         </div>
     );
 };

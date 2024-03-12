@@ -4,7 +4,7 @@ const Input = (props) => {
     return (
         <input
             type="text"
-            className='
+            className="
                 block
                 w-full
                 rounded-md
@@ -16,11 +16,9 @@ const Input = (props) => {
                 placeholder:tg-theme-hint-color
                 h-7
                 px-3
-            '
+            "
             {...props}
-        >
-
-        </input>
+        ></input>
     );
 };
 
