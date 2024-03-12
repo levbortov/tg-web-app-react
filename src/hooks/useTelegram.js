@@ -18,12 +18,20 @@ export function useTelegram() {
         }
     }
 
+    const onAuth = () => {
+        tg.ready();
+    }
+
+
+
     return {
+        onAuth,
         onClose,
         onToggleButton,
         onSetBackButton,
         tg,
         user: tg.initDataUnsafe?.user,
         theme: tg.themeParams,
+        platform: tg.platform,
     }
 };
