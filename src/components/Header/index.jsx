@@ -11,10 +11,10 @@ function Header() {
     }
 
     return (
-        <div className='header tg-theme-header-bg-color'>
+        <div className='flex justify-between align-middle tg-theme-header-bg-color'>
             <Button onClick={onPlatform}>Узнать платформу</Button>
             {user &&
-                <span className='username'>@{user?.username} • {platform}</span>
+                <span>@{user?.username} • {platform}</span>
             }
 
         </div>
