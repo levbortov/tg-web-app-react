@@ -6,20 +6,16 @@ import ProductList from './components/ProductList';
 import Form from './components/Form';
 
 function App() {
-  const { tg } = useTelegram();
+  const { tg, onAuth } = useTelegram();
 
   useEffect((() => {
-    tg.ready();
+    onAuth();
+    tg.showAlert('Приложение запущено')
   }), [])
 
   return (
     <div className='App flex flex-col gap-2'>
       <Header />
-      <code>
-        <pre>
-          {tg.platform}
-        </pre>
-      </code>
       <Routes>
         <Route index element={<ProductList />} />
         <Route path='form' element={<Form />} />
