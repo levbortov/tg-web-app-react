@@ -18,14 +18,7 @@ export function useTelegram() {
         }
     }
 
-    const onAuth = () => {
-        tg.ready();
-    }
-
-
-
     return {
-        onAuth,
         onClose,
         onToggleButton,
         onSetBackButton,

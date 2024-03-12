@@ -6,10 +6,10 @@ import ProductList from './components/ProductList';
 import Form from './components/Form';
 
 function App() {
-  const { tg, onAuth } = useTelegram();
+  const { tg } = useTelegram();
 
   useEffect((() => {
-    onAuth();
+    tg.ready();
   }), [])
 
   return (

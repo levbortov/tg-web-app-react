@@ -14,7 +14,7 @@ function Header() {
         <div className='header tg-theme-header-bg-color'>
             <Button onClick={onPlatform}>Узнать платформу</Button>
             {user &&
-                <span className='username'>@{user?.username}•{platform}</span>
+                <span className='username'>@{user?.username} • {platform}</span>
             }
 
         </div>
