@@ -8,12 +8,7 @@ function Header() {
 
     const onUser = () => {
         tg.showAlert(
-            `ID: ${user?.id}\n
-            Имя: ${user?.first_name}\n
-            Фамилия: ${user?.last_name}\n
-            Пользователь: @${user?.username}\n
-            Язык: ${user?.language_code}\n
-            Платформа: ${platform}`
+            `ID: ${user?.id}\nИмя: ${user?.first_name}\nФамилия: ${user?.last_name}\nПользователь: @${user?.username}\nЯзык: ${user?.language_code}\nПлатформа: ${platform}`
         );
     }
 
