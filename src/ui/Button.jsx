@@ -2,7 +2,8 @@ import React from 'react';
 
 const Button = (props) => {
     return (
-        <button className='
+        <button
+            className="
             tg-theme-button-color
             tg-theme-button-text-color
             active:brightness-[0.75]
@@ -12,7 +13,7 @@ const Button = (props) => {
             flex
             items-center
             justify-center
-            rounded-md'
+            rounded-md"
             {...props}
         >
             {props.children}
