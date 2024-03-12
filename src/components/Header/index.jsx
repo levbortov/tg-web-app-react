@@ -6,13 +6,20 @@ import Button from '../../ui/Button';
 function Header() {
     const { user, tg, platform } = useTelegram();
 
-    const onPlatform = () => {
-        tg.showAlert(`Текущая платформа: ${platform}`);
+    const onUser = () => {
+        tg.showAlert(
+            `ID: ${user?.id}\n
+            Имя: ${user?.first_name}\n
+            Фамилия: ${user?.last_name}\n
+            Пользователь: @${user?.username}\n
+            Язык: ${user?.language_code}\n
+            Платформа: ${platform}`
+        );
     }
 
     return (
         <div className='flex justify-between align-middle tg-theme-header-bg-color'>
-            <Button onClick={onPlatform}>Узнать платформу</Button>
+            <Button onClick={onUser}>Пользователь</Button>
             {user &&
                 <span>@{user?.username} • {platform}</span>
             }
