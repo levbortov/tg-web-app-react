@@ -1,21 +1,19 @@
 import React, { useCallback, useEffect } from 'react';
-import { useTelegram } from '../../hooks/useTelegram';
-import Input from '../../ui/Input';
+import { useTelegram } from '../hooks/useTelegram';
+import Input from '../ui/Input';
 
 const Form = () => {
     const [country, setCountry] = React.useState('');
     const [city, setCity] = React.useState('');
-    const [subject, setSubject] = React.useState('phisical');
     const { tg } = useTelegram();
 
     const onSandData = useCallback(() => {
         const data = {
             country,
             city,
-            subject,
         };
         tg.sendData(JSON.stringify(data));
-    }, [country, city, subject]);
+    }, [country, city]);
 
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSandData);
@@ -44,11 +42,6 @@ const Form = () => {
 
     const changeCity = (e) => {
         setCity(e.target.value);
-    };
-
-    const changeSubject = (e) => {
-        setSubject(e.target.value);
-        console.log(e.target.value);
     };
 
     return (

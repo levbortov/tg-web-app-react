@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTelegram } from '../../hooks/useTelegram';
-import Button from '../../ui/Button';
+import { useTelegram } from '../hooks/useTelegram';
+import Button from '../ui/Button';
 
 function Header() {
     const { user, tg, platform } = useTelegram();

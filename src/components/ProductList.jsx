@@ -1,6 +1,6 @@
 import React from 'react';
-import ProductItem from '../ProductItem';
-import { useTelegram } from '../../hooks/useTelegram';
+import ProductItem from './ProductItem';
+import { useTelegram } from '../hooks/useTelegram';
 
 const products = [
     {
