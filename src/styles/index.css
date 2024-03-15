@@ -1,13 +1,6 @@
 @import url(./_variables.css);
+@import url(./_app.css);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-    max-width: 430px;
-    margin: 0 auto;
-
-    background-color: var(--tg-theme-secondary-bg-color, #eaeaf3);
-    color: var(--tg-theme-text-color, #000);
+* {
+    box-sizing: border-box;
 }

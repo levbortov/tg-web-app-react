@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTelegram } from '../hooks/useTelegram';
-import Button from '../ui/Button';
+import { Button } from '@mui/base';
 
 function Header() {
     const { user, tg, platform } = useTelegram();
@@ -12,7 +12,7 @@ function Header() {
     };
 
     return (
-        <div className="flex justify-between items-baseline tg-theme-header-bg-color px-4">
+        <div>
             <Button onClick={onUser}>Пользователь</Button>
             {user && (
                 <span>

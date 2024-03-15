@@ -105,7 +105,7 @@ const ProductList = () => {
     };
 
     return (
-        <div className="grid grid-cols-2 gap-2 px-4">
+        <div>
             {products.map((item) => (
                 <ProductItem key={item.id} product={item} onAdd={onAdd} />
             ))}

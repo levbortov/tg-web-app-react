@@ -14,7 +14,7 @@ function App() {
     }, []);
 
     return (
-        <div className="App flex flex-col gap-2">
+        <div>
             <Header />
             <Routes>
                 <Route index element={<ProductList />} />
